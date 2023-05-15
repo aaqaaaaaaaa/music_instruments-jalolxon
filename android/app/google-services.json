@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13904324002",
+    "project_id": "music-instruments-e3565",
+    "storage_bucket": "music-instruments-e3565.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13904324002:android:e17a18857c0a07727cfefb",
+        "android_client_info": {
+          "package_name": "om.example.music_instruments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13904324002-3hng23lfegha46gko9ga2b40i0b45t4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbwnFCQ4jjCbsR3pV-cJxdmIMTLn2N3zM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13904324002-3hng23lfegha46gko9ga2b40i0b45t4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

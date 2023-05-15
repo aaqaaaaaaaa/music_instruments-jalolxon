@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>13904324002-1hqpik6cakg7d59nhiof8u9cos68n1sb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.13904324002-1hqpik6cakg7d59nhiof8u9cos68n1sb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCjXOv0oaStB0i73aN6UNuNeglqOW5DFnQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>13904324002</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>om.example.musicinstruments</string>
+	<key>PROJECT_ID</key>
+	<string>music-instruments-e3565</string>
+	<key>STORAGE_BUCKET</key>
+	<string>music-instruments-e3565.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:13904324002:ios:92c782fc1a4b86567cfefb</string>
+</dict>
+</plist>
