@@ -12,9 +12,12 @@ dependencies:
   flutter:
     sdk: flutter
   image_picker: ^0.8.7+4
+  flutter_translate: ^4.0.3
   firebase_storage: ^11.1.1
   cloud_firestore: ^4.5.3
   firebase_core: ^2.10.0
+  flutter_localizations:
+    sdk: flutter
   cupertino_icons: ^1.0.5
   cached_network_image: ^3.2.3
   shared_preferences: ^2.1.0
@@ -44,6 +47,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/i18n/
     - assets/audio/
 
 

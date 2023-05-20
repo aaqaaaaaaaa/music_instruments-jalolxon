@@ -25,6 +25,7 @@ class CatalogPage extends StatefulWidget {
 class _CatalogPageState extends State<CatalogPage> {
   int selectedCategoryId = 0;
   bool isChange = false;
+
   TextEditingController subCategoryController = TextEditingController();
   XFile? xfile;
   String imageUrl = '';
@@ -38,6 +39,7 @@ class _CatalogPageState extends State<CatalogPage> {
 
   @override
   Widget build(BuildContext context) {
+    Locale myLocale = Localizations.localeOf(context);
     return BackgroundApp(
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -252,7 +254,11 @@ class _CatalogPageState extends State<CatalogPage> {
                                                                   ?.docs[
                                                                       selectedCategoryId]
                                                                   .get('items')[
-                                                              index]['title'] ??
+                                                              index][myLocale
+                                                                      .languageCode ==
+                                                                  'ru'
+                                                              ? 'title_ru'
+                                                              : 'title'] ??
                                                           '',
                                                       style: TextStyle(
                                                         fontSize: 14.sp,

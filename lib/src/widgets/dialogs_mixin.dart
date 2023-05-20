@@ -256,4 +256,75 @@ mixin Dialogs {
           );
         });
   }
+
+  // changeLangDialog(BuildContext context) {
+  //   bool currentLangIsUzb = true;
+  //   return showDialog(
+  //       context: context,
+  //       builder: (_) {
+  //         return StatefulBuilder(
+  //           builder: (context, setState) => Column(
+  //             children: [
+  //               AlertDialog(
+  //                 backgroundColor: AppTheme.dialog,
+  //                 shape: RoundedRectangleBorder(
+  //                   borderRadius: BorderRadius.circular(12.r),
+  //                 ),
+  //                 content: SizedBox(
+  //                   height: 250.h,
+  //                   width: 1.w,
+  //                   child: SingleChildScrollView(
+  //                     child: Column(
+  //                       children: [
+  //                         InkWell(
+  //                           onTap: () {
+  //                             setState(() {});
+  //                             currentLangIsUzb = true;
+  //                           },
+  //                           child: Container(
+  //                             child: Row(
+  //                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //                               children: [
+  //                                 Text(
+  //                                   'O\'zbekcha',
+  //                                   style: currentLangIsUzb
+  //                                       ? AppTheme.body16w4
+  //                                       : AppTheme.body16w6,
+  //                                 ),
+  //                                 if (currentLangIsUzb) Icon(Icons.check)
+  //                               ],
+  //                             ),
+  //                           ),
+  //                         ),
+  //                         Divider(),
+  //                         InkWell(
+  //                           onTap: () {
+  //                             setState(() {});
+  //                             currentLangIsUzb = false;
+  //                           },
+  //                           child: Container(
+  //                             child: Row(
+  //                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  //                               children: [
+  //                                 Text(
+  //                                   'Русский',
+  //                                   style: !currentLangIsUzb
+  //                                       ? AppTheme.body16w4
+  //                                       : AppTheme.body16w6,
+  //                                 ),
+  //                                 if (!currentLangIsUzb) Icon(Icons.check)
+  //                               ],
+  //                             ),
+  //                           ),
+  //                         ),
+  //                       ],
+  //                     ),
+  //                   ),
+  //                 ),
+  //               ),
+  //             ],
+  //           ),
+  //         );
+  //       });
+  // }
 }

@@ -53,6 +53,7 @@ class _TypesScreenState extends State<TypesScreen> {
   @override
   Widget build(BuildContext context) {
     print(widget.subCategoryList);
+    Locale myLocale = Localizations.localeOf(context);
     return BackgroundApp(
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -86,8 +87,14 @@ class _TypesScreenState extends State<TypesScreen> {
                                   MaterialPageRoute(
                                     builder: (context) => DetailScreen(
                                       data: SubCategoryItem(
-                                        desc: itemList[index]['desc'],
-                                        title: itemList[index]['title'],
+                                        desc: itemList[index][
+                                            myLocale.languageCode == 'ru'
+                                                ? 'desc_ru'
+                                                : 'desc'],
+                                        title: itemList[index][
+                                            myLocale.languageCode == 'ru'
+                                                ? 'title_ru'
+                                                : 'title'],
                                         image: itemList[index]['image'],
                                         filePath: itemList[index]['filePath'],
                                       ),
@@ -112,9 +119,12 @@ class _TypesScreenState extends State<TypesScreen> {
                                 SizedBox(
                                   width: 215.h,
                                   child: Text(
-                                    (snapshotData
-                                            ?.get('items')[widget.subCategoryId]
-                                        ['items'] as List)[index]['title'],
+                                    (snapshotData?.get(
+                                                'items')[widget.subCategoryId]
+                                            ['items'] as List)[index][
+                                        myLocale.languageCode == 'ru'
+                                            ? 'title_ru'
+                                            : 'title'],
                                     style: TextStyle(
                                         fontSize: 24.sp, fontFamily: 'Inter'),
                                     maxLines: 2,
